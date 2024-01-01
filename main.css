@@ -46,5 +46,37 @@ article:last-of-type > img {
     }
 }
 
+/* Section */
+.sec {
+    padding: 1.5rem 5rem;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec > div {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 50rem;
+    gap: 10px;
+    animation: scrolling linear;
+    animation-timeline: scroll(root);
+}
+
+.sec > div > p {
+    background-color: black;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+@keyframes scrolling {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
 
 
